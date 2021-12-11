@@ -1,7 +1,7 @@
 #!/bin/bash
 
 LINE=`wc -l links`
-LINE=${LINE:0:1} #Combien de lignes dans le fichier
+LINE=${LINE:0:3} #Combien de lignes dans le fichier
 LINE=`expr $RANDOM % $LINE` #Aleatoire et modoluisé
 i=0
 while read -r line;
